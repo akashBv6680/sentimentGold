@@ -31,7 +31,8 @@ st.set_page_config(
 # --------------------------
 # Performance Optimizations
 # --------------------------
-@st.cache_resourcedef load_models():
+@st.cache_resource
+def load_models():
     """Load models with progress indicators"""
     progress = st.progress(0, text="Loading sentiment models...")
 
@@ -52,7 +53,8 @@ st.set_page_config(
         st.error(f"Model loading failed: {str(e)}")
         return None, None
 
-@st.cache_resourcedef setup_api_clients():
+@st.cache_resource
+def setup_api_clients():
     """Initialize API clients with error handling"""
     try:
         with st.spinner("Initializing Reddit API..."):
