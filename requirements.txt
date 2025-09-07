@@ -1,0 +1,12 @@
+streamlit
+transformers
+vaderSentiment
+pandas
+plotly
+wordcloud
+nltk
+textblob
+praw
+google-api-python-client
+scikit-learn
+numpy
