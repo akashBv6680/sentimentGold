@@ -1,12 +1,12 @@
 streamlit
 transformers
+torch
 vaderSentiment
-pandas
 plotly
-wordcloud
 nltk
 textblob
 praw
 google-api-python-client
+pandas
 scikit-learn
 numpy
